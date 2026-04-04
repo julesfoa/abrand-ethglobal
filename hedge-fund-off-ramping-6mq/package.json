@@ -1,0 +1,19 @@
+{
+  "name": "abrand-nav-keeper",
+  "version": "1.0.0",
+  "description": "Off-chain NAV keeper: fetches exchange subaccount equity, signs EIP-712 NAV payloads, pushes on-chain",
+  "type": "module",
+  "scripts": {
+    "keeper": "tsx src/keeper.ts",
+    "keeper:once": "tsx src/keeper.ts --once",
+    "sign": "tsx src/sign-nav.ts"
+  },
+  "dependencies": {
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "abrand",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Onchain hedge fund marketplace built on Base",
+  "workspaces": [
+    "frontend",
+    "hedge-fund-off-ramping-6mq",
+    "boonties-1yw/cre-nav-workflow",
+    "hedera/hedera",
+    "vault-4jm/oracle"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "keeper": "npm run keeper --workspace=hedge-fund-off-ramping-6mq",
+    "keeper:once": "npm run keeper:once --workspace=hedge-fund-off-ramping-6mq",
+    "simulate": "npm run simulate --workspace=boonties-1yw/cre-nav-workflow",
+    "auditor": "npm run start --workspace=vault-4jm/oracle",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  }
+}

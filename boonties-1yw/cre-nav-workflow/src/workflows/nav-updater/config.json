@@ -1,0 +1,12 @@
+{
+  "schedule": "0 */1 * * * *",
+  "auditorApiUrl": "https://your-auditor-server.com/nav",
+  "evms": [
+    {
+      "fundVaultAddress": "0x0000000000000000000000000000000000000000",
+      "navConsumerAddress": "0x0000000000000000000000000000000000000000",
+      "chainSelectorName": "base-testnet-sepolia",
+      "gasLimit": "300000"
+    }
+  ]
+}

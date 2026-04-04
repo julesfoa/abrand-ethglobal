@@ -1,0 +1,24 @@
+{
+  "name": "hedera",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-token": "node scripts/createToken.js",
+    "kyc-grant": "node scripts/kycGrant.js",
+    "mint": "node scripts/mint.js",
+    "transfer": "node scripts/transfer.js",
+    "freeze": "node scripts/freeze.js",
+    "pause": "node scripts/pause.js",
+    "balance": "node scripts/balance.js",
+    "demo": "node scripts/demo.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@hashgraph/sdk": "^2.81.0",
+    "dotenv": "^17.4.0"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "@abrand/cre-nav-workflow",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CRE Workflow: fetches auditor-signed NAV and pushes it on-chain via FundVault",
+  "scripts": {
+    "simulate": "cre workflow simulate ./src/workflows/nav-updater -T local-simulation",
+    "simulate:broadcast": "cre workflow simulate ./src/workflows/nav-updater -T local-simulation --broadcast",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@chainlink/cre-sdk": "^1.4.0",
+    "viem": "^2.34.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
