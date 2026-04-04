@@ -12,7 +12,7 @@
   ],
   "scripts": {
     "dev": "npm run dev --workspace=frontend",
-    "build": "npm run build --workspace=frontend",
+    "build": "npm run typecheck && npm run build --workspaces --if-present",
     "keeper": "npm run keeper --workspace=hedge-fund-off-ramping-6mq",
     "keeper:once": "npm run keeper:once --workspace=hedge-fund-off-ramping-6mq",
     "simulate": "npm run simulate --workspace=boonties-1yw/cre-nav-workflow",
