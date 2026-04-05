@@ -4,7 +4,8 @@
 **Event:** ETHGlobal Cannes 2026
 **Repo:** https://github.com/julesfoa/ABRAND
 
----
+---<img width="669" height="245" alt="Screenshot 2026-04-05 at 08 47 31" src="https://github.com/user-attachments/assets/8d0f64a3-a3e7-405f-9474-622dfab7a720" />
+
 
 ## 1. HEDGE FUND FOR EVERYONE
 
@@ -26,10 +27,12 @@ No prime broker. No lockup. No bullshit.
 
 **How It Works**
 Deposit USDC  →  mint shares at NAV  →  redeem anytime  →  receive USDC or bank wire
+<img width="660" height="245" alt="Screenshot 2026-04-05 at 08 47 38" src="https://github.com/user-attachments/assets/02530af4-9000-4f0e-b1a2-740b5e1fd237" />
 
 NAVOracle.sol — Chainlink Functions fetches an EIP-712 signed NAV from the auditor API hourly, verifies it on-chain, pushes to the vault.
 NAVConsumer.sol — Same flow via Chainlink CRE (onReport), with an ETH/USD Price Feed benchmark that fires a deviation warning if NAV drifts >50% from market.
 FundVault.sol — ERC4626 with NAV-based pricing, redemption queue, 5-min fulfillment cooldown, 7-day auto-release, dispute resolution, and a configurable exit cap.
+<img width="286" height="275" alt="Screenshot 2026-04-05 at 08 47 43" src="https://github.com/user-attachments/assets/17a3280d-bc80-45ef-b17b-78827586fc34" />
 
 Security: monotonic nonce + timestamp + vault address + chain ID in every signature. 10% NAV change cap per update. 24-hour oracle migration timelock. Pause circuit breaker.
 
