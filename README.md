@@ -6,7 +6,7 @@
 
 ---
 
-## 1. WHAT IS ABRAND
+## 1. HEDGE FUND FOR EVERYONE
 
 ABRAND is a **hedge fund marketplace** built on ARC. Retail investors browse real hedge funds, read their strategy docs, and invest in seconds — no prime broker, no feeder fund, no lockup. The core primitive is an **ERC4626 vault** where deposits mint shares priced at a Chainlink-attested NAV, and redemptions settle to USDC (or USD wire via Bridge.xyz).
 
