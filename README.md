@@ -92,7 +92,8 @@ Solidity + Foundry · Next.js 16 · wagmi · Chainlink Functions / Automation / 
 
 ## 7. STACK IMPLEMENTED
 
-◼ Arc
+◈ Arc
+
 ABRAND is deployed end-to-end on Arc Testnet. We use Arc's native USDC precompile (0x3600…) as the vault's base asset — no wrapped token, no bridging friction. The full user journey runs on 
 
 Arc: wallet connection via RainbowKit, USDC approval, vault deposit, share minting, redemption request, fulfillment, and off-ramp via Bridge.xyz. Since Arc doesn't have a native Chainlink Functions deployment, we built MockFunctionsRouter.sol — a drop-in stub that lets the admin manually push signed NAV payloads, keeping the oracle flow functionally identical for the demo. The vault, oracle, and router are all live and verified on Arc Testnet.
