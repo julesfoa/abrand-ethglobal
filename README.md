@@ -101,7 +101,7 @@ Functions + Automation (NAVOracle.sol) — Chainlink Automation triggers perform
 
 CRE + Price Feeds (NAVConsumer.sol) — Implements the Chainlink Runtime Environment entry point onReport(bytes calldata), called directly by the CRE DON forwarder. On every NAV update, the contract also reads the ETH/USD Price Feed and stores the benchmark price. If the fund's NAV deviates more than 50% from the market benchmark, it emits a BenchmarkDeviationWarning — a dead-man's switch against managers manipulating their own NAV reporting.
 
-### What's NOT Done
+### What's NOT Done YET
 
 - NAV walk-down protection (post-hackathon)
 - USDC blacklisting recovery (post-hackathon)
@@ -109,30 +109,6 @@ CRE + Price Feeds (NAVConsumer.sol) — Implements the Chainlink Runtime Environ
 
 ---
 
-
-### Attack prevention
-- EIP-712 signature binding (vault + chain + nonce + timestamp)
-- Monotonic nonce replay protection
-- 2-hour max payload age
-- 10% NAV change cap per update
-- Oracle migration timelock (24h)
-- Exit cap (max % of supply redeemable per cycle)
-- Pause/unpause circuit breaker
-
-
-## 13. TECH STACK SUMMARY
-
-| Layer | Technology |
-|-------|-----------|
-| **Contracts** | Solidity, Foundry, OpenZeppelin (ERC4626, AccessControl, Pausable, ECDSA, EIP712), Chainlink (Functions, Automation, Price Feeds, CRE) |
-| **Frontend** | Next.js 16 (App Router), React 19, TypeScript, Tailwind 4, wagmi 3.6.0, viem 
-2.47.6, RainbowKit 2.2.10, TanStack Query 5 |
-| **Oracle** | Express.js, ethers.js, EIP-712, Chainlink Functions JS sandbox |
-| **Chains** | Base Sepolia (84532), Arc Testnet (5042002), Anvil (local) |
-| **Off-ramp** | Bridge.xyz (USDC → USD wire) |
-| **Design** | Black/red/white, Geist font, film grain, glassmorphism, institutional feel |
-
----
 
 
 ---
