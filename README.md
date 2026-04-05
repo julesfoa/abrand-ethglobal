@@ -1,4 +1,4 @@
-# ABRAND — Exhaustive Project Memo
+# ABRAND — The Hedge Fund Marketplace
 
 **Date:** April 4, 2026
 **Event:** ETHGlobal Cannes 2026
